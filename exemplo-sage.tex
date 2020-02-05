@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{moesioa}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage[amsmath]{maxiplot}
+\usepackage[url,doi,style=numeric,backend=bibtex]{biblatex}
+\addbibresource{referencia.bib}
+\newcommand{\nomet}{}
+\newcommand{\nome}{}
+\newcommand{\nomer}{\bf Mathsiom}
+\newcommand{\titu}{}
+\newcommand{\disc}{}
+\newcommand{\curso}{}
+\newcommand{\inst}{Problemas}
+\newcommand{\instr}{\today}
+%================================================================
+\begin{document}
+\Large
+%===============================================================
+\large
+\begin{center}
+\noindent  \nomer
+\end{center}
+\hfill   %\today\\[2mm]
+\hrule\ 
+%==========================================================================================
+\section*{\sc Problemas}
+Considere\cite{fina2007mathias}:
+
+
+{\bf Questão: }Se uma financeira apresentar o coeficiente de $0,09749$ para $12$ prestações mensais e além disso cobrar $2\%$ sobre o valor financiado, a título de despesas administrativas (desconto este que será feito no ato da compra), qual será a taxa de juros efetiva?
+
+{\sol Temos que}
+
+\ben
+cf=\frac{i}{1-(1+i)^{-12}}=0,09749\\
+\een
+Considerando a equação
+\ben
+a(i)= \frac{1-(1+i)^{-12}}{i}
+\een
+\begin{sagesilent}
+a(i)= (1-(1+i)^-12)/i
+\end{sagesilent}
+
+\sageplot[width=.5\textwidth]{plot(a(i), i, 0, 5)}
+
+\ben
+a(0,027)=\sage{a(0.027)}\\
+a(0.03)=\sage{a(0.03)}\\
+a(0.09)=\sage{a(0.09)}\\
+a(0.05)=\sage{a(0.05)}
+\een
+
+%==========================================================================================
+%==========================================================================================
+\printbibliography
+%==========================================================================================
+\end{document}
