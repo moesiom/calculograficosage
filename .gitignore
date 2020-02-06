@@ -278,3 +278,4 @@ TSWLatexianTemp*
 #sagemath
 *.sage
 *.sage.py
+/sage-plots-for-exemplo-sage.tex/*
