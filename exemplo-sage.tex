@@ -1,17 +1,19 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{moesioa}
+\usepackage{sagetex}
 \usepackage{caption}
 \usepackage{amsmath}
-\usepackage[amsmath]{maxiplot}
+%\usepackage[amsmath]{maxiplot}
+\usepackage{csquotes}
 \usepackage[url,doi,style=numeric,backend=bibtex]{biblatex}
 \addbibresource{referencia.bib}
 \newcommand{\nomet}{}
 \newcommand{\nome}{}
-\newcommand{\nomer}{\bf Mathsiom}
+\newcommand{\nomer}{\bf Aplicações  Latex -- Sagemath}
 \newcommand{\titu}{}
 \newcommand{\disc}{}
 \newcommand{\curso}{}
-\newcommand{\inst}{Problemas}
+\newcommand{\inst}{$(1+i)^{t}$}
 \newcommand{\instr}{\today}
 %================================================================
 \begin{document}
@@ -25,7 +27,8 @@
 \hrule\ 
 %==========================================================================================
 \section*{\sc Problemas}
-Considere\cite{fina2007mathias}:
+Considere o problema de\cite{fina2007mathias}:
+ 
 
 
 {\bf Questão: }Se uma financeira apresentar o coeficiente de $0,09749$ para $12$ prestações mensais e além disso cobrar $2\%$ sobre o valor financiado, a título de despesas administrativas (desconto este que será feito no ato da compra), qual será a taxa de juros efetiva?
@@ -48,8 +51,8 @@ a(i)= (1-(1+i)^-12)/i
 \ben
 a(0,027)=\sage{a(0.027)}\\
 a(0.03)=\sage{a(0.03)}\\
-a(0.09)=\sage{a(0.09)}\\
-a(0.05)=\sage{a(0.05)}
+%a(0.09)=\sage{a(0.09)}\\
+%a(0.05)=\sage{a(0.05)}
 \een
 
 %==========================================================================================
